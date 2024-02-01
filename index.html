@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript Object Lab</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div>
+      <form id="myForm" onsubmit="onSubmit(event)">
+        <label for="name">Please enter car name</label>
+        <input type="text" id="name" name="name" required />
+        <label for="model">Please enter car model</label>
+        <input type="text" id="model" name="model" required />
+        <label for="year">Please enter car year</label>
+        <input type="number" id="year" name="year" required />
+        <label for="price">Please enter car price</label>
+        <input type="number" id="price" name="price" required />
+        <label for="quantity">Please enter car quantity</label>
+        <input type="number" id="quantity" name="quantity" required />
+        <label for="color">Please choose a car color</label>
+        <input type="color" id="color" name="color" required />
+        <label for="image">Please paste url</label>
+        <input type="url" id="image" name="image" required />
+        <input type="submit" />
+      </form>
+    </div>
+
+    <div>
+      <div class="cars"></div>
+      <button onclick="sortAscending()">Ascending</button>
+      <button onclick="sortDescending()">Descending</button>
+    </div>
+
+    <div>
+      <button onclick="averagePrice()">Calculate Average Price</button>
+      <p class="average"></p>
+    </div>
+    <div>
+      <button onclick="calcTotalPriceAndQuant()">Show Total Price</button>
+      <p class="price"></p>
+      <p class="quantity"></p>
+      <p class="highest_price"></p>
+      <p class="lowest_price"></p>
+    </div>
+  </body>
+</html>
